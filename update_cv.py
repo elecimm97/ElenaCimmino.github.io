@@ -15,6 +15,7 @@ from pypdf.errors import PyPdfError
 ROOT = Path(__file__).resolve().parent
 HEADINGS = ('PROFILE', 'RESEARCH', 'EXPERIENCE', 'EDUCATION', 'SKILLS',
             'LANGUAGES', 'PUBLICATIONS', 'CONFERENCES')
+PHOTO_FILES = ('photo.jpg', 'photo.jpeg', 'photo.png', 'photo.webp')
 
 
 def read_pdf(path):
@@ -141,7 +142,7 @@ def projects_html(projects):
     return '\n'.join(cards) or '<p class="empty">No extra projects published yet.</p>'
 
 
-def render(data, projects, template):
+def render(data, projects, template, photo_name=None):
     latest = data['experience'][0]
     papers = []
     for p in data['publications']:
@@ -151,6 +152,8 @@ def render(data, projects, template):
         papers.append('<article class="publication">' + paragraph(str(p['year']) + (' · THESIS' if p['thesis'] else ''), 'meta')
                       + f'<h3>{title}</h3>' + paragraph(p['details'], 'muted') + '</article>')
     values = dict(
+        photo=(f'<img class="profile-photo" src="{escape(photo_name, quote=True)}" '
+               'alt="Portrait of Elena Cimmino" width="192" height="192">') if photo_name else '',
         latest_title=escape(latest['title']), latest_institution=escape(latest['institution']),
         latest_period=escape(latest['period']),
         latest_description=escape(re.split(r'(?<=[.!?])\s', latest['description'], maxsplit=1)[0]),
@@ -169,10 +172,16 @@ def build(source=ROOT / 'cv.pdf', output=ROOT / '_site'):
     # Validate everything before replacing the last working page.
     data = parse_cv(read_pdf(source))
     projects = json.loads((ROOT / 'projects.json').read_text(encoding='utf-8'))
-    html = render(data, projects, (ROOT / 'template.html').read_text(encoding='utf-8'))
+    photo = next((name for name in PHOTO_FILES if (ROOT / name).is_file()), None)
+    html = render(data, projects, (ROOT / 'template.html').read_text(encoding='utf-8'), photo)
     output.mkdir(parents=True, exist_ok=True)
-    for filename in ('style.css', 'favicon.svg'):
+    for filename in ('style.css', 'favicon.svg', 'theme.js'):
         shutil.copyfile(ROOT / filename, output / filename)
+    if photo:
+        shutil.copyfile(ROOT / photo, output / photo)
+    for old_photo in PHOTO_FILES:
+        if old_photo != photo:
+            (output / old_photo).unlink(missing_ok=True)
     shutil.copyfile(source, output / 'cv.pdf')
     temporary = output / 'index.tmp'
     temporary.write_text(html, encoding='utf-8')
