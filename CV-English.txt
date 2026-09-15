@@ -1,0 +1,81 @@
+ELENA CIMMINO
+elecimm.97@gmail.com | github.com/EleCimm | ORCID: 0009-0002-0370-9413
+
+PROFILE
+Medical biotechnologist with extensive experience in bioinformatics and computational biology, and a PhD in Molecular Medicine and Medical Biotechnology. My work spans computational tools and pipelines for biological, genomic and imaging data, quantitative modelling of cellular systems, and, more recently, spatial and single-cell transcriptomics to study the tumour microenvironment and cellular communication and signalling.
+
+RESEARCH
+During my PhD and subsequent research at CEINGE, I developed quantitative methods and software to study cultured cells and genomic data. This work included models of cell shape and morphology and tools for simulating cell populations, integrated into SimulCell. In parallel, I developed scientific web applications and gained experience in manipulating, visualising and comparing genomic sequences and assemblies, contributing to ChromoMapper and ChromoMapperWeb. My recent research focuses on spatial and single-cell transcriptomics to study cellular interactions and signalling programmes in the tumour microenvironment. I also develop reproducible, modular Python/R pipelines for spatial transcriptomics analysis.
+
+EXPERIENCE
+[03/2026 - Present] Postdoctoral Researcher
+Istituto Pasteur Italia - Fondazione Cenci Bolognetti, Rome
+Computational analysis of spatial and single-cell transcriptomics data to characterise the organisation of the tumour microenvironment and the impact of signal transduction on cellular and tissue phenotypes. Development of modular bioinformatics pipelines integrating cell annotation, spatial neighbourhoods, cell-cell communication, transcription factor activity and reconstruction of intracellular signalling networks.
+
+[01/2025 - 02/2026] Postdoctoral Researcher
+CEINGE - Biotecnologie Avanzate Franco Salvatore, Naples
+Management and analysis of experimental data from biological images and genomic studies. Development and maintenance of web applications and computational tools for scientific data analysis.
+
+EDUCATION
+[2021 - 2025] PhD in Molecular Medicine and Medical Biotechnology
+University of Naples Federico II
+Development of web applications for time-lapse microscopy analysis and cellular system simulations; quantitative study of cell morphology, movement and membrane mechanics; development of computational models and bioinformatics tools. Thesis: “Modelling morphology and dynamics of moving cultured cells”.
+
+[2019 - 2021] MSc in Medical Biotechnology - 110/110 cum laude
+University of Naples Federico II
+Thesis: “Modelling morphology and mechanics of moving cultured cells observed in time lapse experiments”.
+
+[2016 - 2019] BSc in Health Biotechnology - 107/110
+University of Naples Federico II
+Thesis: “Modelling the profile of moving cells” (English translation of the original Italian title).
+
+SKILLS
+• Molecular biology and bioinformatics applied to genomic, transcriptomic and spatial/single-cell data.
+• Manipulation and analysis of sequences, genome assemblies and high-dimensional biological data.
+• Quantitative analysis of microscopy images and time-lapse experimental data.
+• Quantitative modelling of cell morphology, motility and the behaviour of in vitro cellular systems.
+• Scientific software, web applications and reproducible pipelines for biological data analysis.
+• Programming: Python, R, PHP, JavaScript, HTML/CSS and C++; Bash, Git and Linux environments.
+• Bioinformatics tools: Scanpy/AnnData, scVI, Squidpy, LIANA+, decoupler, Cytoscape and SignalingProfiler/CARNIVAL.
+
+LANGUAGES
+• Italian: native
+• English: C1
+• Spanish: A2
+• French: A1
+
+PUBLICATIONS
+“ChromoMapperWeb: evaluate genome alignments and track assembly steps within an interactive graphic environment”
+Toscano E, Cimmino E, Boccia A, Sepe L, Paolella G
+Nucleic Acids Research, 2026
+DOI: 10.1093/nar/gkag506
+
+“ChromoMapper: a new tool to quickly compare large genome assemblies”
+Toscano E, Cimmino E, Boccia A, Sepe L, Paolella G
+Bioinformatics Advances, 2026
+DOI: 10.1093/bioadv/vbag005
+
+“Modelling morphology and dynamics of moving cultured cells”
+Cimmino E
+PhD thesis, 2025. Molecular Medicine and Medical Biotechnology, University of Naples Federico II
+
+“A Strategy for Single-Run Sequencing of the Water Buffalo Genome: (II) Fast One-Step Assembly of Highly Continuous Chromosome Sequences”
+Toscano E, Sepe L, Di Maggio F, Nunziato M, Boccia A, Cimmino E, Scialla A, Salvatore F, Paolella G
+Animals, 2025; 15(20):3014
+DOI: 10.3390/ani15203014
+
+“Cell populations simulated in silico within SimulCell accurately reproduce the behaviour of experimental cell cultures”
+Toscano E, Cimmino E, Boccia A, Sepe L, Paolella G
+NPJ Syst Biol Appl. 2025 May 17;11(1):48
+DOI: 10.1038/s41540-025-00518-w
+
+“Methods and computational tools to study eukaryotic cell migration in vitro”
+Toscano E, Cimmino E, Pennacchio FA, Riccio P, Poli A, Liu YJ, Maiuri P, Sepe L, Paolella G
+Frontiers in Cell and Developmental Biology, 2024; 12:1385991
+DOI: 10.3389/fcell.2024.1385991
+
+CONFERENCES
+“SimulCell reproduces a wide range of cell features and can predict the behaviour of transformed cell populations”. Elvira Toscano, Elena Cimmino, Leandra Sepe, Giovanni Paolella. BITS 2025 - 21st Annual Meeting of the Bioinformatics Italian Society, Naples, Italy, 11-13 June 2025.
+“Simulation of cell morphology using models derived from cell features and components”. E. Cimmino, E. Toscano, L. Sepe, G. Paolella. TFDA Comp-Bio Workshop - Computational and Quantitative Biology Task Force, Naples, 22 October 2024.
+“SimulCell: an in silico simulation system which accurately reproduces the behaviour of specific cell populations growing and migrating on culture dish”. E. Toscano, E. Cimmino, A. Boccia, L. Sepe, G. Paolella. TFDA Comp-Bio Workshop - Computational and Quantitative Biology Task Force, Naples, 22 October 2024.
+“A New Web Tool for Rapid Evaluation of Mammalian Genome Assemblies”. E. Toscano, L. Sepe, A. Boccia, E. Cimmino, F. Di Maggio, M. Nunziato, F. Salvatore, G. Paolella. 25th International Colloquium on Animal Cytogenetics and Genomics (ICACG), Naples, 26-29 June 2024.
