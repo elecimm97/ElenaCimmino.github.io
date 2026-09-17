@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "title": "LUT Studio",
+    "description": "A browser-based photo editor built with Python and Shiny. Explore color presets, apply custom 3D LUTs and export full-resolution images.",
+    "url": "https://elecimm97.github.io/lut-studio/"
+  }
+]
